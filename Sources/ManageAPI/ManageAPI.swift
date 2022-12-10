@@ -1,16 +1,15 @@
 import Foundation
 
 //TODO: Support iOS 13 and above...
-public class API {
+public class ManageAPI {
     
-    private init() {}
-    public let shared = API()
+    public init() {}
     
     // default headers.
     // set headers option
     // custom headers can be passed with resource object.
     
-    public func PerformRequest<T>(resource: Resource<T>,completion: @escaping (Result<T, Error>) -> Void) {
+    public func performRequest<T>(resource: Resource<T>,completion: @escaping (Result<T, Error>) -> Void) {
         var request = URLRequest(url: resource.url)
         request.addHeaders(resource.customHeaders)
 
