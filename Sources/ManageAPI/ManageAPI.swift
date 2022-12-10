@@ -1,7 +1,7 @@
 import Foundation
 
 //TODO: Support iOS 13 and above...
-public final class ManageAPI {
+public class ManageAPI {
     
     private init() {}
     public let shared = ManageAPI()
