@@ -1,10 +1,10 @@
 import Foundation
 
 //TODO: Support iOS 13 and above...
-public class ManageAPI {
+public class API {
     
     private init() {}
-    public let shared = ManageAPI()
+    public let shared = API()
     
     // default headers.
     // set headers option
