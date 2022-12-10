@@ -9,8 +9,8 @@ public enum RequestType: String {
 
 
 public struct Resource<T: Decodable> {
-    let requestType: RequestType
-    let parameters: [String: Any]?
-    let url: URL
-    let customHeaders: [String: String]?
+    public let requestType: RequestType
+    public let parameters: [String: Any]?
+    public let url: URL
+    public let customHeaders: [String: String]?
 }

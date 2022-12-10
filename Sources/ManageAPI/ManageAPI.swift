@@ -1,7 +1,7 @@
 import Foundation
 
 //TODO: Support iOS 13 and above...
-public class ManageAPI {
+public final class ManageAPI {
     
     private init() {}
     public let shared = ManageAPI()
@@ -54,7 +54,7 @@ public class ManageAPI {
 
 extension URLRequest {
     mutating func addHeaders(_ headers: [String: String]?) {
-        if var customHeaders = headers {
+        if let customHeaders = headers {
             self.allHTTPHeaderFields = customHeaders
             addAdditionalHeader()
         }
